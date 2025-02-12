@@ -31,7 +31,7 @@ function number_to_letter(number) {
                 parts.push(tens[Math.floor(n / 10)])
                 n %= 10
             }
-            if (n >= 0) {
+            if (n > 0) {
                 parts.push(smallNUMS[n])
             }
             // تبدیل آرایه به استرینگ
@@ -49,4 +49,4 @@ function number_to_letter(number) {
     return sentence.join(" و ")
 }
 
-console.log(number_to_letter(213246300000000000));
+console.log(number_to_letter(7000000000000000)); 
